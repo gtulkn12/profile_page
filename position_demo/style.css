@@ -1,0 +1,9 @@
+#img2 {
+  width: 500px;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  border: rosybrown;
+  border-width: 5px;
+  border-style: solid;
+}

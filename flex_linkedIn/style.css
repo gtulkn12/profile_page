@@ -1,0 +1,49 @@
+body {
+  /* height: 100vh; */
+}
+
+main {
+  display: flex;
+  height: 100%;
+
+  margin: 10;
+  border: 1px solid red;
+}
+
+.inner_container {
+  display: flex;
+  width: fit-content;
+  border: 1px solid rosybrown;
+  padding: 20px;
+  overflow-x: scroll;
+
+  /* justify-content: space-evenly; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile_card {
+  margin: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  width: 200px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  box-shadow: 2px 2px 15px 1px black;
+  border-radius: 5px;
+}
+
+.profile_card span {
+  font-style: italic;
+  font-size: small;
+}
+
+.medium_img {
+  width: 100px;
+  border-radius: 50%;
+}

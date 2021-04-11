@@ -1,0 +1,23 @@
+.menu {
+  background-color: lightgrey;
+  height: 30px;
+  display: flex;
+  /* position: sticky; */
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 100; /*allows menu to allways be the top item */
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-self: center;
+}
+
+.main_container {
+  position: relative;
+  margin-top: 40px;
+}
