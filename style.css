@@ -79,12 +79,16 @@ aside {
   margin-bottom: 160px;
 }
 
+.about_card div {
+  padding-bottom: 48px;
+}
+
 .about_card h1 {
   font-size: 60px;
 }
 
-.about_card div {
-  padding-bottom: 48px;
+.about_card p {
+  display: inline-block;
 }
 
 /***********************************
@@ -111,4 +115,9 @@ aside {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
