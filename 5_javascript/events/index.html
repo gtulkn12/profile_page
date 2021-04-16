@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="click" onclick="myFunction(this)">click</button>
+    <button id="click1">click</button>
+    <button id="click2">click</button>
+    <button id="click" onclick="myFunction(this)">click</button>
+    <button id="mouseover" onmouseover="myFunction(this)">mouseover</button>
+    <button id="mouseout" onmouseout="myFunction1(this)">mouseout</button>
+    <input
+      type="text"
+      id="onfocus"
+      style="border-width: 5px"
+      onfocus="myFunction(this)"
+    />
+    <input type="text" id="outfocus" outfocus="myFunction1(this)" />
+
+    <script>
+      document.getElementById("click1").onclick = function () {
+        myFunction1(this);
+        // const randColor = "red";
+        // document.getElementById("click2").style.backgroundColor = randColor;
+      };
+
+      document.addEventListener("click", function () {
+        // myFunction1(this);
+        const randColor = "yellow";
+        document.getElementById("click2").style.backgroundColor = randColor;
+      });
+
+      function myFunction(elm) {
+        elm.style.backgroundColor = "red";
+      }
+
+      function myFunction1(elm) {
+        elm.style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>
